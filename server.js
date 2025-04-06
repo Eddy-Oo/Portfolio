@@ -1,10 +1,13 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 
+// Configuration
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
+// Sample data with corrected image paths
 const projects = [
   { 
     name: "Movie Review Anime", 
@@ -36,16 +39,34 @@ const projects = [
   }
 ];
 
+// Routes
+app.get('/', (req, res) => res.render('index', { 
+  title: "Kawaii Portfolio",
+  images: {
+    background: "/images/anime-bg.png",
+    sakura: "/images/sakura.png",
+    character: "/images/anime-girl.png"
+  }
+}));
 
-app.get('/', (req, res) => res.render('index', { title: "Kawaii Portfolio" }));
-app.get('/projects', (req, res) => res.render('projects', { projects, title: "Anime Projects" }));
-app.get('/contact', (req, res) => res.render('contact', { title: "Contact Me" }));
+app.get('/projects', (req, res) => res.render('projects', { 
+  projects, 
+  title: "Anime Projects"
+}));
 
+app.get('/contact', (req, res) => res.render('contact', { 
+  title: "Contact Me"
+}));
 
+// Form handling
 app.post('/submit-form', (req, res) => {
   const { name, email, message } = req.body;
   console.log(`New message from ${name} (${email}): ${message}`);
-  res.render('success', { name, title: "Message Sent!" });
+  res.render('success', { 
+    name, 
+    title: "Message Sent!",
+    image: "/images/anime-girl.png"
+  });
 });
 
 const PORT = process.env.PORT || 3000;
