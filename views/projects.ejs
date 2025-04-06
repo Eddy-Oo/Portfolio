@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a id="projects" href="/projects">projects</a>
+      <a href="/contact">contact</a>
+    </nav>
+    <section id="main">
+      <section id="Projects">
+        <% projects.forEach(project => { %>
+        <div class="project">
+          <h3><%= project.name %></h3>
+          <img src="<%= project.photo %>" alt="<%= project.name %>" />
+          <p class="description"><%= project.description %></p>
+          <p class="date"><%= project.date%></p>
+          <a class="view" href="<%= project.link%>" target="_blank">view</a>
+        </div>
+        <% }) %>
+      </section>
+    </section>
+  </body>
+</html>

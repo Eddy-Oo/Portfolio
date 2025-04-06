@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    color: white;
+  }
+  
+  nav {
+    position: sticky;
+    top: 10px;
+    background-color: rgba(88, 88, 88, 0.795);
+    border-bottom: solid 0.1px white;
+    width: auto;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+    padding: 2vh;
+    margin: 0px;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    font-size: 2vh;
+  }
+  
+  nav a:hover {
+    transform: scale(1.1);
+  }
+  
+  #home,
+  #projects,
+  #contact {
+    border-bottom: solid white 1px;
+  }
+  
+  /* scroll bar  */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* footer */
+  footer {
+    margin-top: 20vh;
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  footer i {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    padding: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  i:hover {
+    color: rgba(255, 255, 255, 0.363);
+  }

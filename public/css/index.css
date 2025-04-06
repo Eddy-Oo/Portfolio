@@ -1,0 +1,33 @@
+section {
+    position: sticky;
+    top: 10vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+  }
+  
+  h1 {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  #text {
+    font-size: 8vh;
+    padding-bottom: 10%;
+    height: 6vh;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    section {
+      height: 40vh;
+    }
+    #text {
+      font-size: 4vh;
+      height: 4vh;
+    }
+  }

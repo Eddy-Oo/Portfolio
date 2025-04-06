@@ -1,0 +1,57 @@
+#Projects {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project {
+    height: 600px;
+    width: 350px;
+    margin: auto;
+    border-bottom: 1px solid white;
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 3vh;
+  }
+  h3::before,
+  h3::after {
+    content: " -- ";
+  }
+  img {
+    width: 100%;
+  }
+  .date {
+    padding-left: 90%;
+    color: rgba(255, 255, 255, 0.486);
+  }
+  .view {
+    text-decoration: none;
+    margin-top: auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 1px rgb(255, 255, 255) solid;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .view:hover {
+    background-color: rgba(255, 255, 255, 0.212);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    #Projects {
+      grid-template-columns: 1fr;
+    }
+    .date {
+      padding-left: 70%;
+    }
+  }
