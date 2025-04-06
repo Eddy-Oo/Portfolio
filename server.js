@@ -14,7 +14,7 @@ const projects = [
     description: "Anime movie review platform with cute UI",
     link: "https://github.com/Eddy-Oo/Movie_Review_Anime.git",
     image: "/images/movie-review.png",
-    tags: ["Anime", "Reviews", "Kawaii"]
+    tags: ["Anime", "Reviews", "Movie"]
   },
   { 
     name: "Personal Profile Website", 
