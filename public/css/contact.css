@@ -1,40 +1,97 @@
+/* contact.css */
 #main {
     display: flex;
     flex-direction: column;
     text-align: center;
-  }
-  
-  form {
+    background: rgba(26, 26, 46, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
     align-self: center;
-    padding: 10px;
-    border: 1px rgb(255, 255, 255) solid;
-    color: rgb(255, 255, 255);
-    border-radius: 5px;
     padding: 50px;
+    border: 2px #ff69b4 solid;
+    color: #ffc0cb;
+    border-radius: 15px;
     width: 50%;
-  }
-  
-  input,
-  textarea {
-    background-color: black;
-    color: white;
+    background: rgba(26, 26, 46, 0.8);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+}
+
+input, textarea {
+    background-color: rgba(26, 26, 46, 0.9);
+    color: #ffc0cb;
     height: 30%;
-    padding-bottom: 20px;
+    padding: 15px;
     margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: black;
+    border: 1px solid #ff69b4;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ff1493;
+    box-shadow: 0 0 10px #ff69b4;
+}
+
+button {
+    padding: 15px;
+    background-color: #ff69b4;
     color: white;
-    border: 1px solid white;
-    transition: 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: rgba(255, 255, 255, 0.212);
-    color: rgb(255, 255, 255);
-  }
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    animation: heartbeat 1.5s infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff69b4;
+}
+
+/* Form animations */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+@keyframes float-up {
+    to { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+
+/* Error styles */
+#emailError, #nameError, #msgError {
+    display: none;
+    color: #ff1493 !important;
+    text-shadow: 0 0 5px rgba(255, 20, 147, 0.5);
+    margin-bottom: 15px;
+}
+
+/* Floating hearts */
+.heart-float {
+    position: absolute;
+    animation: float-up 1s linear forwards;
+    pointer-events: none;
+}
