@@ -1,46 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Eddy Oo</title>
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-</head>
-<body>
-  <nav>
-    <a id="home" href="/">Home</a>
-    <a href="/projects">Projects</a>
-    <a href="/contact">Contact</a>
-  </nav>
-  
-  <main>
-    <section>
-      <h1>Eddy Oo</h1>
-      <div id="text"></div>
-    </section>
-    
-    <section id="skills">
-      <h2>✧ Skills ✧</h2>
-      <ul class="skills-grid">
-        <li><span class="skill-icon">🌸</span> HTML, CSS, JavaScript</li>
-        <li><span class="skill-icon">🎀</span> Responsive Web Design</li>
-        <li><span class="skill-icon">🐱</span> Python Programming</li>
-        <li><span class="skill-icon">✨</span> Web Accessibility</li>
-        <li><span class="skill-icon">🎮</span> Unreal Engine</li>
-        <li><span class="skill-icon">👾</span> Unity</li>
-      </ul>
-    </section>
-  </main>
-  
-  <footer>
-    <div>
-      <a href="#"><i class="devicon-github-original"></i></a>
-      <a href="#"><i class="devicon-linkedin-plain"></i></a>
-    </div>
-    <p>© 2025 Eddy Oo</p>
-  </footer>
-  
-  <script src="/script/index.js"></script>
-</body>
-</html>
+const text = "Hi, I'm Eddy Oo. I create web and game development projects.";
+const textElement = document.getElementById("text");
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    textElement.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 50);
+  } else {
+    // Add cursor after typing completes
+    const cursor = document.createElement('span');
+    cursor.id = 'cursor';
+    cursor.textContent = '|';
+    textElement.appendChild(cursor);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", typeWriter);
