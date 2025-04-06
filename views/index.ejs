@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfoilo</title>
-    <link rel="stylesheet" href="/public/css/main.css" />
-    <link rel="stylesheet" href="/public/css/index.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-  </head>
-  <body>
-    <nav>
-      <a id="home" href="/">Home</a>
-      <a href="/projects">Projects</a>
-      <a href="/contact">Contact</a>
-    </nav>
-    <section id="main">
-      <h1>Eddy Oo</h1>
-      <p id="text"></p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  
+  <main>
+    <section class="hero">
+      <h1>Welcome to My Portfolio!</h1>
+      <p>I'm a passionate developer creating amazing web experiences</p>
     </section>
-    <footer>
-      <div id="app"></div>
-      <a href="">
-        <i class="devicon-github-original"></i>
-      </a>
-      <a href="">
-        <i class="devicon-linkedin-plain"></i>
-      </a>
-      <p>@2025 Eddy Oo</p>
-    </footer>
-    <script src="/public/script/index.js"></script>
-  </body>
+    
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML/CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Express</div>
+        <div class="skill">EJS</div>
+        <div class="skill">Git</div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="/public/script/index.js"></script>
+</body>
 </html>
