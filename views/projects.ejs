@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/projects.css" />
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a id="projects" href="/projects">projects</a>
-      <a href="/contact">contact</a>
-    </nav>
-    <section id="main">
-      <section id="Projects">
-        <% projects.forEach(project => { %>
-        <div class="project">
-          <h3><%= project.name %></h3>
-          <img src="<%= project.photo %>" alt="<%= project.name %>" />
-          <p class="description"><%= project.description %></p>
-          <p class="date"><%= project.date%></p>
-          <a class="view" href="<%= project.link%>" target="_blank">view</a>
-        </div>
-        <% }) %>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Eddy Oo</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a id="projects" href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  
+  <main>
+    <section>
+      <h1>My Projects</h1>
+      <div id="projects">
+        <!-- Project items will be dynamically inserted here -->
+      </div>
     </section>
-  </body>
+  </main>
+  
+  <footer>
+    <div>
+      <a href="#"><i class="devicon-github-original"></i></a>
+      <a href="#"><i class="devicon-linkedin-plain"></i></a>
+    </div>
+    <p>© 2025 Eddy Oo</p>
+  </footer>
+</body>
 </html>
