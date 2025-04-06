@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/public/css/main.css" />
-    <link rel="stylesheet" href="/public/css/success.css" />
-  </head>
-  <body>
-    <div class="alert-popup-container">
-      <div class="success-checkmark">
-        <div class="check-icon">
-          <span class="icon-line line-tip"></span>
-          <span class="icon-line line-long"></span>
-          <div class="icon-circle"></div>
-          <div class="icon-fix"></div>
-        </div>
-      </div>
-    <p>Thanks <%= name %>! We’ll review it and respond shortly.</p>
-    <a href="/">Back to Menu</a>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Sent</title>
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="/public/css/success.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  
+  <main>
+    <div class="success-message">
+      <h1>Thank You, <%= name %>!</h1>
+      <p>Your message has been sent successfully.</p>
+      <p>I'll get back to you as soon as possible.</p>
+      <a href="/" class="home-link">Return to Home</a>
+    </div>
+  </main>
+</body>
 </html>
