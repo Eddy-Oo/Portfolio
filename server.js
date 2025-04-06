@@ -31,7 +31,7 @@ const projects = [
     name: "LOL Champion Search", 
     description: "League of Legends champion database with anime flair",
     link: "https://github.com/Eddy-Oo/LOL-Champion-Search-.git",
-    image: "https://github.com/Eddy-Oo/LOL-Champion-Search-/blob/main/LOL_Champion_Search/1.png?raw=true",
+    image: "/images/LOL-Champion-Search.png",
     tags: ["Gaming", "Anime", "Database"]
   }
 ];
