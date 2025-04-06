@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact ME</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/contact.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/projects">projects</a>
-      <a id="contact" href="/contact">contact</a>
-    </nav>
-    <section id="main">
-      <h1>Contact</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Eddy Oo</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/projects">Projects</a>
+    <a id="contact" href="/contact">Contact</a>
+  </nav>
+  
+  <main>
+    <section>
+      <h1>Contact Me</h1>
       <form id="form" action="/submit-form" method="POST">
-        <input id="name" type="text" name="name" placeholder="Your Name" />
-        <input id="email" type="email" name="email" placeholder="Your Email" />
-        <textarea id="msg" name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-
-        <span id="emailError" style="color: red; display: none"
-          >Invalid email format</span
-        >
-        <span id="nameError" style="color: red; display: none">
-          Name must be at least 2 characters long
-        </span>
-        <span id="msgError" style="color: red; display: none"
-          >Message must be at least 10 characters.</span
-        >
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </section>
-    <footer>
-      <div id="app"></div>
-      <a href="">
-        <i class="devicon-github-original"></i>
-      </a>
-      <a href="">
-        <i class="devicon-linkedin-plain"></i>
-      </a>
-      <p>@2025 Min Okkar</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.7.0/validator.min.js"></script>
-    <script src="/script/contact.js"></script>
-  </body>
+  </main>
+  
+  <footer>
+    <div>
+      <a href="#"><i class="devicon-github-original"></i></a>
+      <a href="#"><i class="devicon-linkedin-plain"></i></a>
+    </div>
+    <p>© 2025 Eddy Oo</p>
+  </footer>
+  
+  <script src="/script/contact.js"></script>
+</body>
 </html>
