@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfoilo</title>
-    <link rel="stylesheet" href="/public/css/main.css" />
-    <link rel="stylesheet" href="/public/css/index.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-  </head>
-  <body>
-    <nav>
-      <a id="home" href="/">Home</a>
-      <a href="/projects">Projects</a>
-      <a href="/contact">Contact</a>
-    </nav>
-    <section id="main">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Eddy Oo</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+  <nav>
+    <a id="home" href="/">Home</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  
+  <main>
+    <section>
       <h1>Eddy Oo</h1>
-      <p id="text"></p>
+      <div id="text"></div>
     </section>
-    <footer>
-      <div id="app"></div>
-      <a href="">
-        <i class="devicon-github-original"></i>
-      </a>
-      <a href="">
-        <i class="devicon-linkedin-plain"></i>
-      </a>
-      <p>@2025 Eddy Oo</p>
-    </footer>
-    <script src="/public/script/index.js"></script>
-  </body>
+    
+    <section id="skills">
+      <h2>✧ Skills ✧</h2>
+      <ul class="skills-grid">
+        <li><span class="skill-icon">🌸</span> HTML, CSS, JavaScript</li>
+        <li><span class="skill-icon">🎀</span> Responsive Web Design</li>
+        <li><span class="skill-icon">🐱</span> Python Programming</li>
+        <li><span class="skill-icon">✨</span> Web Accessibility</li>
+        <li><span class="skill-icon">🎮</span> Unreal Engine</li>
+        <li><span class="skill-icon">👾</span> Unity</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <div>
+      <a href="#"><i class="devicon-github-original"></i></a>
+      <a href="#"><i class="devicon-linkedin-plain"></i></a>
+    </div>
+    <p>© 2025 Eddy Oo</p>
+  </footer>
+  
+  <script src="/script/index.js"></script>
+</body>
 </html>
