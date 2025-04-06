@@ -10,6 +10,22 @@ body {
   flex-direction: column;
 }
 
+/* Add to main.css */
+.page-title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+main {
+  text-align: center; /* Ensures all text in main is centered by default */
+}
 /* Navigation */
 nav {
   position: sticky;
