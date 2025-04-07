@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   background-color: #0a0a0a;
   color: white;
@@ -10,7 +9,6 @@ body {
   flex-direction: column;
 }
 
-/* Add to main.css */
 .page-title {
   text-align: center;
   margin-bottom: 0.5rem;
@@ -24,9 +22,9 @@ body {
 }
 
 main {
-  text-align: center; /* Ensures all text in main is centered by default */
+  text-align: center; 
 }
-/* Navigation */
+
 nav {
   position: sticky;
   top: 0;
@@ -53,7 +51,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* Main Content */
+
 main {
   flex: 1;
   padding: 20px;
@@ -71,7 +69,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-/* Typing Animation */
+
 #text {
   font-size: 2rem;
   min-height: 100px;
@@ -90,7 +88,7 @@ h1 {
   50% { opacity: 0; }
 }
 
-/* Projects Grid */
+
 #projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -129,7 +127,7 @@ h1 {
   background-color: #ff1493;
 }
 
-/* Contact Form */
+
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -166,7 +164,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 20px;
@@ -185,13 +183,12 @@ footer i:hover {
   color: #ff69b4;
 }
 
-/* Success Page */
+
 .success-checkmark {
   text-align: center;
   margin: 20px auto;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   nav {
     gap: 10%;
