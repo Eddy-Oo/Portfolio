@@ -2,12 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Configuration
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 
-// Sample data with corrected image paths
 const projects = [
   { 
     name: "Movie Review Anime", 
@@ -39,7 +37,7 @@ const projects = [
   }
 ];
 
-// Routes
+
 app.get('/', (req, res) => res.render('index', { 
   title: "Kawaii Portfolio",
   images: {
@@ -58,7 +56,6 @@ app.get('/contact', (req, res) => res.render('contact', {
   title: "Contact Me"
 }));
 
-// Form handling
 app.post('/submit-form', (req, res) => {
   const { name, email, message } = req.body;
   console.log(`New message from ${name} (${email}): ${message}`);
