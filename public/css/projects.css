@@ -1,10 +1,9 @@
-/* Projects Page - Centered Text Version */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  text-align: center; /* Added this line */
+  text-align: center; 
 }
 
 .project-card {
@@ -16,10 +15,10 @@
   position: relative;
   overflow: hidden;
   border: 2px solid var(--pink-light);
-  display: flex; /* Added */
-  flex-direction: column; /* Added */
-  align-items: center; /* Added */
-  justify-content: center; /* Added */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-card::before {
@@ -41,15 +40,15 @@
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--pink-dark);
-  text-align: center; /* Added */
-  width: 100%; /* Added */
+  text-align: center;
+  width: 100%;
 }
 
 .project-card p {
   margin-bottom: 1.5rem;
   color: var(--text-color);
-  text-align: center; /* Added */
-  width: 100%; /* Added */
+  text-align: center;
+  width: 100%;
 }
 
 .project-tags {
@@ -57,8 +56,8 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-  justify-content: center; /* Added */
-  width: 100%; /* Added */
+  justify-content: center;
+  width: 100%;
 }
 
 .project-tag {
@@ -82,7 +81,7 @@
   transition: all 0.3s ease;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: auto; /* Added */
+  width: auto;
 }
 
 .project-link:hover {
@@ -91,7 +90,6 @@
   background: linear-gradient(to right, var(--pink-secondary), var(--pink-dark));
 }
 
-/* Add this for the project image container */
 .project-image {
   width: 100%;
   display: flex;
