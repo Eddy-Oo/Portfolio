@@ -1,4 +1,3 @@
-/* contact.css */
 #main {
     display: flex;
     flex-direction: column;
@@ -62,7 +61,6 @@ button:hover {
     box-shadow: 0 0 20px #ff69b4;
 }
 
-/* Form animations */
 @keyframes heartbeat {
     0% { transform: scale(1); }
     25% { transform: scale(1.1); }
@@ -81,7 +79,6 @@ button:hover {
     to { transform: translateY(-100px) rotate(360deg); opacity: 0; }
 }
 
-/* Error styles */
 #emailError, #nameError, #msgError {
     display: none;
     color: #ff1493 !important;
@@ -89,7 +86,6 @@ button:hover {
     margin-bottom: 15px;
 }
 
-/* Floating hearts */
 .heart-float {
     position: absolute;
     animation: float-up 1s linear forwards;
